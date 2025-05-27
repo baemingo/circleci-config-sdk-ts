@@ -1,5 +1,11 @@
 # CircleCI Config SDK
 
+## Warning ⚠️
+**This repo is no longer maintained, supported, or monitored by CircleCI. It will be archived in the next 90 days. It can be forked for those that would like to continue using it.**
+
+**This SDK is provided on an ‘as-is’ and ‘as available’ basis without any warranties of any kind. CircleCI disclaims all warranties, express or implied, including, but not limited to, all implied warranties of merchantability, title, fitness for a particular purpose, and noninfringement.**
+
+
 [![GitHub](https://img.shields.io/github/license/CircleCI-Public/circleci-config-sdk-ts)](https://github.com/CircleCI-Public/circleci-config-sdk-ts/blob/main/LICENSE)
 [![CircleCI](https://img.shields.io/circleci/build/gh/CircleCI-Public/circleci-config-sdk-ts/main?logo=circleci&token=5fcb5715c180e9f7d3a076d95779cd88f75d2093)](https://app.circleci.com/pipelines/github/CircleCI-Public/circleci-config-sdk-ts)
 [![npm](https://img.shields.io/npm/v/@circleci/circleci-config-sdk?logo=npm)](https://www.npmjs.com/package/@circleci/circleci-config-sdk)
