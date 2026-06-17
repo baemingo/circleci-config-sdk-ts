@@ -1,6 +1,8 @@
 import path from 'path';
 import webpack from 'webpack';
 
+const cwdNodeModules = path.resolve(__dirname, 'node_modules');
+
 export const config: webpack.Configuration = {
   mode: 'production',
   entry: './src/index.ts',
@@ -17,7 +19,10 @@ export const config: webpack.Configuration = {
             options: { configFile: 'tsconfig.webpack.json' },
           },
         ],
-        exclude: /node_modules/,
+        exclude: function (modulePath) {
+          // Excludes node_modules strictly inside cwd
+          return modulePath.startsWith(cwdNodeModules) && /node_modules/.test(modulePath);
+        },
       },
     ],
   },
