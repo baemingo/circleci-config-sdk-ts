@@ -11,7 +11,7 @@
     "prettier:ci": "prettier --check .",
     "build": "rm -rf ./dist && npx webpack --mode production",
     "build:docs": "typedoc --tsconfig ./tsconfig.json --logLevel Verbose --excludeInternal --internalNamespace internalTypes",
-    "prepare": "npm run build"
+    "prepack": "npm run build"
   },
   "repository": {
     "type": "git",
